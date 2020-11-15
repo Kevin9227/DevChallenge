@@ -13,14 +13,8 @@ body {
 
     width: 100%;
     height: 120px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
 
 }
@@ -64,7 +58,6 @@ body {
 
 .conteudo {
     display: flex;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
@@ -122,11 +115,7 @@ body {
 
 /* INICIO DA RESPONSIVIDADE */
 @media only screen and (max-width: 550px) {
-    .topo {
-
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    }
+   
 
     .menu ul {
         list-style: none;
@@ -152,19 +141,12 @@ body {
         position: relative;
         left: 90px;
         top: 20px;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
         justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
         align-items: center;
         width: 35px;
         height: 35px;
         cursor: pointer;
-        -webkit-transition: all .5s ease-in-out;
         transition: all .5s ease-in-out;
     }
 
@@ -173,9 +155,7 @@ body {
         height: 2px;
         background: #000;
         border-radius: 5px;
-        -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
         box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-        -webkit-transition: all .5s ease-in-out;
         transition: all .5s ease-in-out;
     }
 
@@ -187,38 +167,30 @@ body {
         height: 2px;
         background: #000;
         border-radius: 5px;
-        -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
         box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-        -webkit-transition: all .5s ease-in-out;
         transition: all .5s ease-in-out;
     }
 
     .menu-btn_burger::before {
-        -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
     }
 
     .menu-btn_burger::after {
-        -webkit-transform: translateY(10px);
         transform: translateY(10px);
     }
 
     /*INICIO DA AXIMAÇÃO */
     .menu-btn.open .menu-btn_burger {
-        -webkit-transform: translateX(-50px);
         transform: translateX(-50px);
         background: transparent;
-        -webkit-box-shadow: none;
         box-shadow: none;
     }
 
     .menu-btn.open .menu-btn_burger::before {
-        -webkit-transform: rotate(45deg) translate(35px, -35px);
         transform: rotate(45deg) translate(35px, -35px);
     }
 
     .menu-btn.open .menu-btn_burger::after {
-        -webkit-transform: rotate(-45deg) translate(35px, 35px);
         transform: rotate(-45deg) translate(35px, 35px);
     }
 
@@ -227,13 +199,9 @@ body {
     .conteudo {
         height: auto;
         margin-bottom: 250px;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -ms-flex-pack: distribute;
         justify-content: space-around;
         justify-items: center;
-        -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
     }
 
@@ -265,6 +233,7 @@ body {
 
     .img {
         position: relative;
+        margin: 0 25px 0 25px;
         top: 60px;
         right: 0;
         margin: 0;
@@ -274,7 +243,7 @@ body {
     .img img {
         position: relative;
         right: 15px;
-        width: 430px;
+        width: 410px;
         height: 250px;
     }
 }
