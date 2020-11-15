@@ -1,15 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="master.css">
     <title>Document</title>
+    <link rel="stylesheet" href="master.css">
 </head>
+
 <body>
-    <section>
-   <video src="bg.mp4" autoplay loop muted></video> 
-        <h2>CODAR ANGOLA</h2>
-    </section>
+    <!--INICIO DO TOPO E MENU--->
+    <header class="topo">
+        <h2>DevChallenge</h2>
+        <nav class="menu">
+
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <div class="menu-btn_burger">
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--FIM DO TOPO E MENU-->
+    <div class="conteudo">
+        <div class="texto">
+            <h1>Create amazing graphics</h1>
+            <p>Colaborate and create beautiful graphics with your team</p>
+            <button>Start now</button>
+        </div>
+        <div class="img">
+            <img src="assets/team.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        let menuOpen = false;
+        menuBtn.addEventListener('click', () => {
+            if (!menuOpen) {
+                menuBtn.classList.add('open');
+                menuOpen = true;
+            } else {
+                menuBtn.classList.remove('open');
+                menuOpen = false;
+            }
+        });
+
+    </script>
 </body>
+
 </html>
