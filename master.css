@@ -114,7 +114,7 @@ body {
 /* FIM DO CONTEUDO */
 
 /* INICIO DA RESPONSIVIDADE */
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 320px) {
    
 
     .menu ul {
@@ -140,7 +140,7 @@ body {
     .menu-btn {
         position: relative;
         left: 90px;
-        top: 20px;
+        top: -25px;
         display: flex;
         justify-content: center;
         align-items: center;
